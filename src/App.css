@@ -1,0 +1,188 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NavbarLinks {
+  display: none;
+}
+
+.NavbarLinks a {
+  text-decoration: none;
+  color: rgb(22, 22, 22);
+}
+
+.Navbar img {
+  width: 12rem;
+}
+
+.Navbar button {
+  background-color: transparent;
+  border: none;
+  color: rgb(22, 22, 22);
+  transition: color 200ms ease-in;
+  height: fit-content;
+}
+
+.Navbar button:hover {
+  color: rgb(110, 110, 110);
+  cursor: pointer;
+}
+
+.Navbar button span {
+  font-size: 2.5rem;
+}
+
+.Content {
+  display: grid;
+  row-gap: 16px;
+  grid-template-rows: repeat(16, 150px);
+  grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 12px;
+}
+
+.MockImg {
+  width: 100%;
+  height: 100%;
+}
+
+
+.TallPic {
+  grid-row-start: span 4;
+  object-fit: cover;
+}
+
+.WidePic {
+  grid-row-start: span 2;
+  object-fit: contain;
+}
+
+.Quote {
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 1.6rem;
+  margin: 5rem 0;
+}
+
+.Actions {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin-bottom: 48px;
+}
+
+.ActionBlock {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.TextBlock {
+  margin-left: 8px;
+  color: rgb(22, 22, 22);
+}
+
+.TextBlock h2 {
+  font-family: "Caveat", cursive;
+  font-size: 2.4rem;
+}
+
+.TextBlock p {
+  font-family: "Sedan", serif;
+  font-size: 1.1rem;
+}
+
+.TextBlock h2, .TextBlock p {
+  margin: 0;
+}
+
+.TextBlock button {
+  margin-top: 28px;
+  width: 200px;
+  background-color: transparent;
+  border: 2px solid rgb(22, 22, 22);
+  font-family: "Sedan", serif;
+  font-size: 1.2rem;
+  padding: 8px;
+  color: rgb(22, 22, 22);
+  transition: border 200ms ease-in;
+}
+
+.TextBlock button:hover {
+  cursor: pointer;
+  border: 2px solid rgb(110, 110, 110);
+}
+
+.Filler {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
+  row-gap: 12px;
+  column-gap: 12px;
+}
+
+.Filler img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 545px) {
+  .Content {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+  }
+
+  .WidePic {
+    object-fit: cover;
+  }
+
+  .Actions {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 12px;
+    column-gap: 12px;
+  }
+
+  .Actions > .ActionBlock:nth-child(3) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .Actions > .ActionBlock:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+@media (min-width: 768px) {
+  .Quote {
+    margin: 8rem 0;
+  }
+
+  .Filler {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .Navbar button {
+    display: none;
+  }
+
+  .NavbarLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 400px;
+    font-size: 1.4rem;
+    font-family: "Sedan", serif;
+  }
+}
