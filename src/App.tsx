@@ -1,6 +1,28 @@
 import './App.css';
 import Navbar from './Navbar';
 
+import G1 from './assets/img/G1.webp';
+import G2 from './assets/img/G2.webp';
+import G3 from './assets/img/G3.webp';
+import G4 from './assets/img/G4.webp';
+import G5 from './assets/img/G5.webp';
+import G6 from './assets/img/G6.webp';
+import G7 from './assets/img/G7.webp';
+import G8 from './assets/img/G8.webp';
+import G9 from './assets/img/G9.webp';
+
+import A1 from './assets/img/A1.webp';
+import A2 from './assets/img/A2.webp';
+
+import F1 from './assets/img/F1.jpg';
+import F2 from './assets/img/F2.jpg';
+import F3 from './assets/img/F3.jpg';
+import F4 from './assets/img/F4.jpg';
+import F5 from './assets/img/F5.jpg';
+import F6 from './assets/img/F6.jpg';
+import F7 from './assets/img/F7.jpg';
+import F8 from './assets/img/F8.jpg';
+
 function App() {
 
   return (
@@ -8,15 +30,15 @@ function App() {
     <Navbar></Navbar>
     
     <div className="Content">
-      <img src='./src/assets/img/G1.webp' className="MockImg TallPic"></img>
-      <img src='./src/assets/img/G2.webp' className='MockImg WidePic'></img>
-      <img src='./src/assets/img/G3.webp' className='MockImg TallPic'></img>
-      <img src='./src/assets/img/G4.webp' className='MockImg TallPic'></img>
-      <img src='./src/assets/img/G5.webp' className='MockImg TallPic'></img>
-      <img src='./src/assets/img/G6.webp' className='MockImg TallPic'></img>
-      <img src='./src/assets/img/G7.webp' className='MockImg TallPic'></img>
-      <img src='./src/assets/img/G8.webp' className='MockImg TallPic'></img>
-      <img src='./src/assets/img/G9.webp' className='MockImg WidePic'></img>
+      <img src={G1} className="MockImg TallPic"></img>
+      <img src={G2} className='MockImg WidePic'></img>
+      <img src={G3} className='MockImg TallPic'></img>
+      <img src={G4} className='MockImg TallPic'></img>
+      <img src={G5} className='MockImg TallPic'></img>
+      <img src={G6} className='MockImg TallPic'></img>
+      <img src={G7} className='MockImg TallPic'></img>
+      <img src={G8} className='MockImg TallPic'></img>
+      <img src={G9} className='MockImg WidePic'></img>
     </div>
 
     <div className="Quote">
@@ -24,7 +46,7 @@ function App() {
     </div>
 
     <div className="Actions">
-      <img src='./src/assets/img/A1.webp' className="ActionBlock"></img>
+      <img src={A1} className="ActionBlock"></img>
       <div className="ActionBlock">
         <div className="TextBlock">
           <h2>Reservations</h2>
@@ -33,7 +55,7 @@ function App() {
         </div>
       </div>
 
-      <img src='./src/assets/img/A2.webp' className="ActionBlock"></img>
+      <img src={A2} className="ActionBlock"></img>
       <div className="ActionBlock">
         <div className="TextBlock">
           <h2>Menu</h2>
@@ -44,14 +66,14 @@ function App() {
     </div>
 
     <div className="Filler">
-      <img src="./src/assets/img/F1.jpg"/>
-      <img src="./src/assets/img/F2.jpg"/>
-      <img src="./src/assets/img/F3.jpg"/>
-      <img src="./src/assets/img/F4.jpg"/>
-      <img src="./src/assets/img/F5.jpg"/>
-      <img src="./src/assets/img/F6.jpg"/>
-      <img src="./src/assets/img/F7.jpg"/>
-      <img src="./src/assets/img/F8.jpg"/>
+      <img src={F1}/>
+      <img src={F2}/>
+      <img src={F3}/>
+      <img src={F4}/>
+      <img src={F5}/>
+      <img src={F6}/>
+      <img src={F7}/>
+      <img src={F8}/>
     </div>
     </>
   )
